@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floater style of loom </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+
+    /* css code goes here */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(to bottom, #563d7c, #007bff);
+      margin: 0;
+    }
+    .dropdown-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+  .dropdown-menu p {
+    margin: 0;
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .dropdown-menu button{
+    margin-left: 10px;
+  }
+    .step-box {
+      text-align: center;
+      padding: 20px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      height: 90px;
+      width: 100%;
+      position: relative;
+    }
+    p{
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .dropdown-arrow:hover{
+        background-color: #0056b3;
+    }
+    
+    h3 {
+      margin-bottom: 4px;
+    }
+    .dropdown-arrow {
+    position: absolute;
+    right: 20px;
+    top: 56%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 2px 9px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .dropdown-menu {
+        margin-top: 25px;
+        margin-right: 15px;
+        box-shadow: 0 2px 5px rgb(0,0,0,0.4);
+        display: none;
+    }
+    .dropdown-menu.show {
+      display: block;
+    }
+  </style>
+<!-- html code goes here  -->
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="step-box" id="step1">
+          <h3>Create an Account</h3>
+          <button class="btn btn-link dropdown-toggle dropdown-arrow" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <p id="step1-paragraph">Join us in a world of possibilities! Sign up now to unlock exclusive access and enjoy a personalized experience with us.</p>
+            <a href="https://www.loom.com/signup" target="_blank">
+                <button class="btn btn-primary">Click here</button>
+              </a>
+          </div>
+          <p>Sign up to get started.</p>
+        </div>
+        <div class="step-box" id="step2">
+          <h3>Download App</h3>
+          <button class="btn btn-link dropdown-toggle dropdown-arrow" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <p id="step2-paragraph">Ready to begin? Sign up now to embark on your journey with us. Start exploring and experiencing our platform's full potential!</p>
+            <a href="https://www.loom.com/download" target="_blank">
+                <button class="btn btn-primary">Click here</button>
+              </a>
+          </div>
+          <p>Download our app on your device.</p>
+        </div>
+        <div class="step-box" id="step3">
+          <h3>Record a Video</h3>
+          <button class="btn btn-link dropdown-toggle dropdown-arrow" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <p id="step3-paragraph">Capture moments with a click! hit record, and immortalize memories. Whether it's a tutorial, vlog, or a heartfelt message—press play on your creativity!</p>
+          </div>
+          <p>Record your awesome video content.</p>
+        </div>
+        <div class="step-box" id="step4">
+          <h3>Share Your Video</h3>
+          <button class="btn btn-link dropdown-toggle dropdown-arrow" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <p id="step4-paragraph">Ready to shine? Share your video with the world! Upload, connect, and let your story unfold. Your voice, your vision—share it and make an impact!</p>
+          </div>
+          <p>Share your video with the world!</p>
+        </div>
+        <div class="step-box" id="step5">
+          <h3>Get a view</h3>
+          <button class="btn btn-link dropdown-toggle dropdown-arrow" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <p id="step4-paragraph">Ready to be seen? Get a view! Share your content, connect with audiences, and watch your impact grow. Your perspective matters—let the world see it!</p>
+          </div>
+          <p>Get views by interacting with us </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+
+
+// javascript
+    document.addEventListener('DOMContentLoaded', function () {
+      const steps = ['step1', 'step2', 'step3', 'step4','step5'];
+      steps.forEach(step => {
+        const button = document.querySelector(`#${step} .dropdown-arrow`);
+        const dropdownMenu = document.querySelector(`#${step} .dropdown-menu`);
+        button.addEventListener('click', function () {
+          steps.forEach(otherStep => {
+            if (otherStep !== step) {
+              const otherDropdownMenu = document.querySelector(`#${otherStep} .dropdown-menu`);
+              otherDropdownMenu.classList.remove('show');
+            }
+          });
+          dropdownMenu.classList.toggle('show');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
